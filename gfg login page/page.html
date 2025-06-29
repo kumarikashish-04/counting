@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Login Box</title>
+    <style>
+        body {
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+        }
+
+        .contain {
+            height: 550px;
+            width: 450px;
+            background-color: white;
+            display: flex;
+            border: solid rgb(200, 200, 200) 0.5px;
+            padding-left: 15px;
+            padding-right: 25px;
+            justify-content: start;
+            /* align-items: center; */
+            flex-direction: column;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .login h3 {
+            margin: 10px 0;
+        }
+
+        .rn {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .rn h4 {
+            margin: 0;
+            font-weight: normal;
+        }
+
+        .rn h4:last-child {
+            color: blue;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        /* .signin{
+             display: flex;
+            /* flex-direction: column  ; */
+            /* height: 20px; */
+            /* justify-content: center;
+            
+        } */ 
+         .google{
+            background-color: rgb(174, 186, 199,0.2);
+            border: solid rgba(181, 178, 178) 0.5px;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            padding-top: 10px;
+            height: 35px;
+            margin: 20px;
+         }
+        .other{
+            display: flex;
+            flex-direction: row;
+            height: 20px;
+            justify-content: center;
+            
+        }
+        .button button:hover{
+            background-color: rgb(40, 206, 40);
+        }
+    </style>
+</head>
+<body>
+    <div class="contain">
+        <div class="login">
+            <h3>Log in</h3>
+        </div>
+        <div class="rn">
+            <h4>New user?</h4>
+            <h4>Register now</h4>
+        </div>
+    
+<div class="signin">
+    <!-- Google Sign-In -->
+    <div class="google" style="display: flex; align-items: center; gap: 10px;">
+        <a href="https://www.google.com" style="display: flex; align-items: center; text-decoration: none; color: inherit;">
+            <img src="google.png" style="height: 25px; border-radius: 10px;">
+            <span>Continue with Google</span>
+        </a>
+    </div>
+
+    <!-- Other Sign-In Options -->
+    <div class="other" style="margin: 20px; display: flex; gap: 15px;">
+        <a href="https://www.facebook.com" target="_blank">
+            <img src="facebook.png" style="height: 20px; border-radius: 10px;">
+        </a>
+        <a href="https://www.linkedin.com" target="_blank">
+            <img src="linkedin-icon-logo-png-transparent.webp" style="height: 20px; border-radius: 10px;">
+        </a>
+        <a href="https://www.github.com" target="_blank">
+            <img src="github.png" style="height: 20px; border-radius: 10px;">
+        </a>
+    </div>
+
+
+        <hr>
+        <div class="manual" style="line-height: 5px; margin-top: 20px;margin-bottom: 20px;">
+            <h4>Username or Email</h4>
+            <input type="text" placeholder="Username or Email" style="color:lightblue; height: 30px;width: 99%; border-radius: 10px;">
+             <h4>Password</h4>
+             <input type="password" placeholder="Username or Email" style="color:lightblue; height: 30px;width: 99%;border-radius: 10px;">
+        </div>
+        <div class="remm" style="display: flex;justify-content: space-between ;margin-bottom: 20px;">
+            <div>
+            <input type="checkbox" >Remember Me  
+            </div>
+            <div style="color: rgb(64, 64, 240);">
+                Forgot Password
+            </div>
+        </div>
+        <div class="button">
+            <button style="background-color: rgb(5, 106, 5); font-size: 20px;height:35px;width: 100%;color:white ;border-radius: 10px;">Sign In</button>
+        </div>
+        <p style="font-size: 12px; text-align: center;">By creating this account, you agree to ourPrivacy Policy &Cookie Policy.</p>
+    </div>
+    </div>
+</body>
+</html>
+

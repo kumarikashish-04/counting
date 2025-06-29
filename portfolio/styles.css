@@ -1,0 +1,126 @@
+body{
+background-color: black;
+}
+*{
+   
+    font-weight: bold;
+    font-size: 35px;
+    box-sizing: border-box;
+}
+a{
+   color: rgb(233, 129, 129);
+}
+ .topbar {
+      display: flex;
+      justify-content: space-between; /* naam left, header right */
+      align-items: center;           /* vertically center */
+      padding: 15px 30px;
+      font-family: Arial, sans-serif;
+    color: rgb(233, 129, 129);
+    }
+.naam{
+    font-weight: bolder;
+    font-size: 55px;
+    /* width: 50%; */
+}
+.side:hover{
+    color:yellow;
+    cursor: pointer;
+    text-decoration: underline;
+}
+ .header {
+      display: flex;
+      gap: 25px;
+      padding-right: 25px;
+      
+    }
+.name{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 250px;
+    padding-left:85px;
+    color:rgb(238, 255, 5);
+    font-style: oblique;
+    font-weight: bold;
+    text-shadow: 2px 3px rgb(2, 13, 46),3px 3px blueviolet;
+}
+ .image {
+      /* Just container style (optional) */
+      padding: 5px;
+    }
+
+    .image img {
+      width: 550px;    /* ❗ Change size here */
+      height: 600px;    /* Maintain aspect ratio */
+      border-radius: 10px; /* optional rounded corners */
+    }
+.Resume {
+    background-color: green;
+    border: 1px solid black;
+    border-radius: 25px;
+    box-shadow: 5px 5px 0.2px rgba(244, 93, 93, 0.2); /* soft shadow */
+    padding: 15px 25px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer; /* if it's a button */
+    transition: 0.3s;
+
+}
+
+.Resume:hover {
+    background-color: darkgreen;
+    box-shadow: 7px 7px 12px rgba(0, 0, 0, 0.3);
+}
+.button{
+    padding-left:120px;
+}
+.about{
+    color:rgb(16, 15, 15);
+    /* font-size: 5px; */
+    box-sizing: border-box;
+    background-color: rgb(247, 205, 205);
+    padding-right:50px;
+    padding-left: 25px;
+    padding-bottom: 15px;
+    /* padding-right: 150px; */
+    margin-bottom:75px;
+    margin-top: 20PX;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    box-shadow: 35px 20px 0.2px red;
+}
+#abt{
+    color:black;
+    display:block;
+}
+p{
+    font-size: 28px;
+}
+.container{
+    color:white;
+}
+.Projects{
+    color:white;
+    margin: 50px 50px;
+    padding: 2px;
+}
+.Projects img{
+    height: 450px;
+    width: 350px;
+    transition: transform 0.3s ease;
+    
+}
+.Projects img:hover{
+    transform: scale(1.1);
+
+}

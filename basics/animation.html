@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background-color: rgb(108, 63, 8);
+            box-sizing: border-box;
+        }
+        .box{
+            width: 350px;
+            height: 90px;
+            background-color: blue;
+            border: 3px solid black;
+            margin: 10px;
+            position: relative;
+            animation: rightMovement 5s linear 1s 5;
+
+        }
+        .box2{
+             width: 350px;
+            height: 90px;
+            background-color: blue;
+            border: 3px solid black;
+            margin: 10px;
+            
+            position: relative;
+            animation: leftMovement 5s linear 1s 5;
+        }
+        @keyframes rightMovement{
+            from{
+                top:0;
+                left:0;
+            }
+
+            to{
+                top:0;
+                left:1200px;
+            }
+        }
+        @keyframes leftMovement{
+            from{
+                top:0;
+                left:1200px;
+            }
+
+            to{
+                top:0;
+                left:0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+
+        </div>
+        <div class="box2">
+
+        </div>
+        <div class="box">
+
+        </div>
+        <div class="box2">
+
+        </div>
+        <div class="box">
+
+        </div>
+        <div class="box2">
+
+        </div>
+    </div>
+</body>
+</html>
